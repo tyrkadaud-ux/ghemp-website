@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHEMP | RWA Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --card-bg: #141414;
+            --gold: #D4AF37;
+            --gold-bright: #FFD700;
+            --text-main: #E0E0E0;
+            --text-muted: #A0A0A0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+            border-bottom: 1px solid var(--gold);
+        }
+        .top-text {
+            color: var(--gold);
+            font-size: 20px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+        .logo-box {
+            width: 150px;
+            height: 150px;
+            border: 3px solid var(--gold);
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--card-bg);
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.3);
+        }
+        .logo-box svg { width: 80%; height: 80%; }
+        h1 {
+            color: var(--gold-bright);
+            font-size: 4rem;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 10px;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+        h2 {
+            color: var(--gold);
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--gold);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--gold);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .card h3 { color: var(--gold-bright); font-size: 1.5rem; margin-bottom: 15px; font-family: 'Playfair Display', serif; }
+        ul { list-style-type: none; padding-left: 0; }
+        li { margin-bottom: 10px; position: relative; padding-left: 25px; }
+        li::before { content: "■"; color: var(--gold); position: absolute; left: 0; font-size: 14px; }
+        
+        .contact-section {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: var(--card-bg);
+            border-top: 1px solid var(--gold);
+            margin-top: 40px;
+        }
+        .qr-code {
+            width: 180px;
+            height: 180px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: 3px solid var(--gold);
+            margin-bottom: 20px;
+        }
+        .email {
+            font-size: 2rem;
+            color: var(--gold-bright);
+            font-family: 'Playfair Display', serif;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .email:hover { text-decoration: underline; }
+        
+        @media (max-width: 768px) {
+            .grid-2 { grid-template-columns: 1fr; }
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="top-text">GHEMP PROJECT</div>
+        <div class="logo-box">
+            <!-- Векторный логотип конопли -->
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="48" fill="#0d1a10" stroke="#D4AF37" stroke-width="2"/>
+                <path d="M50 15 C45 30, 30 35, 30 50 C30 60, 40 65, 50 85 C60 65, 70 60, 70 50 C70 35, 55 30, 50 15 Z" fill="#2E8B57"/>
+                <path d="M50 15 L50 85" stroke="#1a5c36" stroke-width="1.5"/>
+                <path d="M45 35 C35 30, 25 35, 20 45 C30 45, 40 50, 45 55 Z" fill="#3CB371"/>
+                <path d="M40 55 C30 55, 20 60, 15 70 C25 70, 35 70, 42 65 Z" fill="#3CB371"/>
+                <path d="M55 35 C65 30, 75 35, 80 45 C70 45, 60 50, 55 55 Z" fill="#3CB371"/>
+                <path d="M60 55 C70 55, 80 60, 85 70 C75 70, 65 70, 58 65 Z" fill="#3CB371"/>
+                <path d="M35 75 C30 80, 30 90, 40 90 C45 90, 45 80, 45 75 Z" fill="#228B22"/>
+                <path d="M65 75 C70 80, 70 90, 60 90 C55 90, 55 80, 55 75 Z" fill="#228B22"/>
+            </svg>
+        </div>
+        <h1>RWA PLATFORM</h1>
+        <div class="subtitle">Agriculture & Real World Assets on Solana</div>
+    </header>
+
+    <div class="container">
+        <h2>О Проекте</h2>
+        <p>GHEMP — это инновационная платформа токенизации реальных активов (RWA) в агропромышленном комплексе. Мы создаем мост между реальным сектором экономики (промышленная конопля) и глобальным цифровым капиталом. Наша цель — предоставить фермерам доступ к честному финансированию без посредников, а инвесторам — прозрачный инструмент для входа в реальный сектор.</p>
+
+        <br><br>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3>Преимущества Solana</h3>
+                <ul>
+                    <li>Скорость: до 65 000 транзакций в секунду.</li>
+                    <li>Низкие комиссии (менее $0.01).</li>
+                    <li>Экологичность и надежность сети.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Как это работает</h3>
+                <ul>
+                    <li>Фермер создает смарт-контракт на поставку.</li>
+                    <li>Платформа выпускает токены, обеспеченные урожаем.</li>
+                    <li>Инвесторы покупают токены, финансируя посев.</li>
+                    <li>После сбора урожая фермер выплачивает доход.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2>Связаться с нами</h2>
+        <br>
+        <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=mailto:Goldenhemp.official@gmail.com" alt="Email QR">
+        <br>
+        <a href="mailto:Goldenhemp.official@gmail.com" class="email">Goldenhemp.official@gmail.com</a>
+        <br><br><br>
+        
+        <h3 style="color: #D4AF37; font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 15px;">Поддержать разработку</h3>
+        <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=solana:ggt" alt="Solana Wallet">
+        <p style="color: #A0A0A0; font-size: 0.9rem;">Сеть Solana (для тестов)</p>
+    </div>
+
+</body>
+</html>
